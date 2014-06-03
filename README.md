@@ -21,3 +21,7 @@ Usage
 
 Examples
 --------
+List all databases using  Windows Authentication to establish a connection with local SQL Server
+```
+scriptcs Sql2Csv.csx -- -q "SELECT * FROM SYS.DATABASES" -c "Server=(local);Integrated Security=SSPI" -o "databases.dsv"
+```
